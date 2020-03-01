@@ -2,6 +2,7 @@
 $mainbar-color-bg: #cac9c8;
 $sidebar-color-bg : #003d74;
 $sidebar-heading-color: #072a50;
+$text-color: white;
 $font-family: "Trebuchet MS";
 $A4width: 21cm;
 $A4height: 29.7cm;
@@ -17,12 +18,13 @@ $A4height: 29.7cm;
   padding-left: 2mm;
 }
 
-
 .together-top {
+  /* Together with bottom element */
   margin-bottom: 0.5mm;
 }
 
 .together-bottom {
+  /* Together with top element */
   margin-top: 0.5mm;
 }
 /*=======================================*/
@@ -38,7 +40,7 @@ body {
 }
 
 a {
-  color: white;
+  color: $text-color;
 }
 /*=======================================*/
 
@@ -47,7 +49,7 @@ a {
 .row {  
   display: flex;
   flex-direction: row;
-  color: white;
+  color: $text-color;
 }
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -66,5 +68,8 @@ a {
 
 .whoami {
   flex: 10%;
-  padding: 3mm;
+  padding-left: 5mm;
+  padding-top: 2mm ;
+  padding-right: 2mm; 
+  padding-bottom: 0.5mm;
 }
