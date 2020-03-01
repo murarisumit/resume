@@ -1,0 +1,70 @@
+/* Reference: https://stackoverflow.com/a/21795173 */
+$mainbar-color-bg: #a5a5a5;
+$sidebar-color-bg : #003d73;
+$sidebar-heading-color: #072a50;
+$font-family: "Trebuchet MS";
+$A4width: 21cm;
+$A4height: 29.7cm;
+
+
+/*============     Utils ==============*/
+.heading-bar {
+  padding-left: 2mm;
+  background-color: $sidebar-heading-color;
+}
+
+.sidebar-content {
+  padding-left: 2mm;
+}
+
+
+.together-top {
+  margin-bottom: 0.5mm;
+}
+
+.together-bottom {
+  margin-top: 0.5mm;
+}
+/*=======================================*/
+
+/*==========HTML tag==============*/
+body {
+  width: $A4width;
+  height: $A4height;
+  font-family: $font-family;
+  /* to centre page on screen*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: white;
+}
+/*=======================================*/
+
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: $sidebar-color-bg;
+  height: $A4height;
+}
+  
+  /* Main column */
+.main {
+  flex: 70%;
+  background-color: $mainbar-color-bg;
+  height: $A4height;
+}
+
+.whoami {
+  flex: 10%;
+  padding: 3mm;
+}
